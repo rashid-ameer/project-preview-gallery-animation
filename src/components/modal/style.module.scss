@@ -1,0 +1,48 @@
+.modalContainer {
+  height: 262.5px;
+  width: 300px;
+  position: absolute;
+  background-color: white;
+  pointer-events: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  .modalSlider {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+
+    .modal {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .modal img {
+        height: auto;
+      }
+    }
+  }
+}
+
+.cursor,
+.cursorLabel {
+  position: absolute;
+  background-color: blue;
+  width: 70px;
+  height: 70px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  pointer-events: none;
+}
+
+.cursorLabel {
+  background-color: transparent;
+}

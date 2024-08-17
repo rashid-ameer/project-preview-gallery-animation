@@ -1,0 +1,36 @@
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  border-top: 1px solid gray;
+  transition: opacity 0.3s;
+  cursor: pointer;
+
+  &:last-child {
+    border-bottom: 1px solid gray;
+  }
+
+  &:hover {
+    opacity: 0.4;
+  }
+
+  h2 {
+    transition: transform 0.4s;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  p {
+    transition: transform 0.4s;
+  }
+
+  &:hover h2 {
+    transform: translateX(10px);
+  }
+
+  &:hover p {
+    transform: translateX(-10px);
+  }
+}
